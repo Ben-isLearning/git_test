@@ -1,7 +1,8 @@
 Following along with 
 https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/introduction-to-html-and-css#html-and-css
 
-Lesson 01
+Lesson 01 - introduction
+
 HTML 
 HyperText Markup Language
 
@@ -20,13 +21,30 @@ HTML is the Bones
 CSS is the Skin
 JS is the Brain
 
-Q) Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?
 
+Q) Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?
 A) HTML - Because a paragraph is a structrual part of a website. 
 
 
 Q) Between HTML and CSS, which would you use for changing the font and background color of a button?
+A) CSS - Because the colours of a given element fall into the asthetics of a website  
 
-A CSS - Because the colours of a given element fall into the asthetics of a website  
+Lesson 02 - elements and tags
 
-Lesson 02
+Within HTML, an item within the webpage is refered to as an element.
+Ex; A heading is an element, a Paragraph is an element
+
+Elements are represented within HTML code by tags, these bad boys <>, </>.
+the full anatomy of an element is <opening> content </closing>.
+
+Q) What is an HTML tag? 
+A) an indication to the web browser that this is the beginning of an element.
+Much like sentences begin with a capital letter, elements begin with tags.  
+
+
+Q) What are the three parts of an HTML Element?
+A) Beginning, Middle and End, Much like any good story.
+Beginning; <open>
+Middle;             content 
+End;                          </open>
+
