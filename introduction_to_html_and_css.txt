@@ -80,3 +80,33 @@ A) To provide the web browser with meta information about the webpage / stuff re
 
 Q) What is the pursose of the body element? 
 A) To hold 95%+ of the website - all of this information will be accessible/shown to the user. 
+
+Lesson 04 - Working with text!
+Headings in order of importance <h1></h1> through to <h6></h6> 
+Paragraphs  <p></p>
+Bolding     <strong> </strong>  (inline)
+Italics     <em> </em>         (inline)
+
+Comments    <!-- Comment --> 
+
+
+Q) How do you create a paragraph in HTML?
+    <p> pararaph </p>
+Q) How do you create a heading in HTML?
+    <h1> Huge Heading </h1>
+Q) How many different levels of headings are there and what is the difference between them?
+    6 levels. 
+Q) What element should you use to make text bold and important?
+    <strong> For Bold/Important </strong> 
+Q) What element should you use to make text italicized to add emphasis to it?
+    <em> For Italics </em>
+Q) What relationship does an element have with any nested elements within it?
+    <parent>
+        <child> </child>
+    </parent>
+Q) What relationship do two elements have if they are at the same level of nesting?
+    They're refered to as Siblings. 
+Q) How do you create HTML comments?
+    <!-- Like this! --> 
+
+
