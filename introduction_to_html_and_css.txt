@@ -123,14 +123,11 @@ vs
 <ul> <li>Heads</li> <li>Tails </li> <li>Draw</li> </ul>
 
 Assignment; Practice usings lists, create the following:
-
 An unordered shopping list of your favorite foods
-
 An ordered list of todo’s you need to get done today
-
 An unordered list of places you’d like to visit someday
-
 An ordered list of your all time top 5 favorite video games or movies
+See List 1-4 HTML files.
 
 Q) What HTML tag is used to create an unordered list?
 A) <ul> </ul>
