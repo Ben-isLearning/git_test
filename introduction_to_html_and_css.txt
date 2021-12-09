@@ -48,3 +48,35 @@ Beginning; <open>
 Middle;             content 
 End;                          </open>
 
+Lesson 03 - Creating a HTML file.
+
+All HTML documents have the same basic structure (refered to as a boilerplate)
+Step 1 - Create new folder / create index.html within. Lets play!
+
+A Boilerplate begins with a prefix by declaring what type the document is 
+<!DOCTYPE html> 
+
+Then actually begins with a Root element + what verbal language the page is for 
+<html lang="en"> (everything else) </html>
+
+First comes the brains of the operation 
+<head> 
+Important information, character sets, title of page, etc
+</head>
+
+Then comes the other 95% of the code 
+<body> 
+Everything else goes here, all headings content etc. 
+</body>
+
+Q) What is the purpose of the Doctype Declaration? 
+A) To inform the web broswer what version of HTML it should use 
+
+Q) What is the HTML element? 
+A) The HTML element is the root element, the rest of out website / Tree will grow from this. 
+
+Q) What is the purpose of the head element?
+A) To provide the web browser with meta information about the webpage / stuff required to render pages correctly
+
+Q) What is the pursose of the body element? 
+A) To hold 95%+ of the website - all of this information will be accessible/shown to the user. 
