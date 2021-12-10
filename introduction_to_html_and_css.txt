@@ -207,7 +207,8 @@ A)  Jpg - Good for Photos
 &rsquo  (Read Single Quote)
 
 
+Lesson 07 - 
 
+Please see https://ben-islearning.github.io/odin-recipes/ 
 
-
-
+for what I have made during this lesson. 
