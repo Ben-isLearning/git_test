@@ -138,7 +138,73 @@ A) <ol> </ol>
 Q) What HTML tag is used to create list items within both unordered and ordered lists?
 A) <li>
 
+Lesson 06 - Links and Images
+h1 - For Heading of most importance
 
+<a></a> is an Anchor tag. Used for links. 
+Anchoring the ship on your webpage to the source, elsewhere. 
+
+<href></href> But an Anchor tag is nothing without its source.
+the href (Hyperlink Reference) attribute sets the destination of the <a></a> tag. 
+
+Absolute Links
+= Links to other websites on the internet. 
+Will always exist as protocol::/domain/path
+Like https://www.theodinproject.com/about
+
+Relative Links 
+= Links to other pages within our own website. 
+Begin relative links with .  To tell the code to look from . not from root
+Ex; "./pages/about.html" 
+
+<img> is used to create an Image. (No closing tag needed)
+Each image needs a src (source) attribute
+<img src="xxx"> 
+To go to the parent directory begin with ../ 
+Ex; "../images/dog.jpg"
+Each image needs an alt (alternative) attribute, just in case!
+(Describes the image)
+<img alt="xxx">
+
+
+Q) What element is used to create a link?
+A) <a> Anchor Tag </a>
+
+Q) What is an attribute?
+A) A Characteristic of a tag that gives additional information 
+
+Q) What attribute tells links where to go to?
+A) href="xx" ~ Hypertext Reference
+
+Q) What is the difference between an absolute and relative link?
+A) an Absolute link is referencing somewhere Absolutely different 
+   a  Relative link is referencing somewhere relatively close (in the same file structure/ website)
+
+Q) What element is used to create an image?
+A) <img>  Image (That doesnt need a closing tag)
+
+Q) What two attributes do images always need to have?
+A) src="xx" A Source, and alt="xx" An Alternative. 
+
+Q) How do you access a parent directory in a filepath?
+A) ../ Begin the attribute with ../ to step up the file Tree
+
+Q) What are the four main image formats that you can use for images on the web?
+A)  Jpg - Good for Photos 
+    Gif - Good for animations 
+    Png - Good for diagrams / Icons  
+    Svg - Good for all sorts - 
+
+
+++ Reserved Characters 
+&lt = <
+&gt = >
+&amp = &
+
+&ldquo  (Leading Double Quote) 
+&rdquo  (Rear Doule Quote)
+&lsquo  (Leading Single Quote)
+&rsquo  (Read Single Quote)
 
 
 
