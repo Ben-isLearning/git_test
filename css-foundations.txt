@@ -1,0 +1,139 @@
+Following Along with https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/css-foundations 
+
+Lesson 01 - introduction
+CSS - Cascading Style Sheet
+
+Basic Syntax; 
+selector {
+    property: value;
+}
+
+Universal selector = *
+* { 
+    property: value;
+}
+
+Class selector = .
+.classname {
+    property: value;
+}
+
+ID selector - # (Unique - Use sparingly if at all)
+#IDname {
+    property:value;
+}
+
+Grouping Selectors   (Will effect both class A and class B)
+.classname1,
+.classname2 {
+    property: value;
+}
+
+Chaining Selectors   (Will effect a single selector with both class A and class B)
+.classname1.classname2 {
+    property: value;
+}
+
+Descendant Selectors   (With a space - No limit - Can search for 5th generation)
+.parent .child  {
+    property: value;
+}
+
+Selector is the HTML Element to which the CSS rules apply
+>What is being selected for each rule 
+
+
+Begining Properties
+
+color
+background-color
+
+Can Use 
+HEX color:  #1100ff80; (#1100ff;) <<<< Fav
+(With or W/o transparency) 
+RGB color:  rgb(100, 0, 127);
+HSL:        hsl(15,82%, 56%);
+
+
+font-family ~ Sets font style 
+font-family: "Font1", fallback-font;
+
+font-size   ~ Sets font size
+font-size: Xpx;
+
+font-weight ~ Sets boldness
+font-weight:    bold;  
+                (or 100 - 900 in increments of 100)
+                
+text-align  ~ Alligns text horizontally within element
+text-align: center; 
+
+the height and width of an image can be defined
+
+img {
+     height: auto; 
+     width: 500px
+}
+
+The Cascade ~ If there's a specificity tie; Whoever was last - Wins
+
+Specificity 
+ID Selectors > Class selectors > Type Selectors 
+
+Inheritance ~ The child will inherit some of the aspects of the parent
+Namely the typography properties (color font-size, font-family)
+
+
+Adding Css to html
+
+Option 1) External CSS 
+
+a) Create css file within file structure "styles.css"
+
+b) In the head of the HTML; insert link with the css
+<link rel="stylesheet" href="styles.css"> 
+
+Option 2) Internal CSS 
+
+a) in the head of the HTML; add <style></style>
+
+b) code all css inside there.
+
+Option 3) Inline CSS 
+
+a) In the body of the HTML; add the style="xxx;"
+
+b) Can work for a unique style for a single element
+    Otherwise dont use this. 
+
+Practice
+
+Go to https://github.com/TheOdinProject/css-exercises/commit/c8af491a131cb934e7aa5e997202f6bc3343362e
+
+
+Q) What are the main differences between external, internal, and inline CSS?
+A) External - Saved Outside the HTML / Internal - Saved in the Head the HTML / Inline - Saved in the line of html.
+
+Q) What is the syntax for class and ID selectors?
+A) Class = .classname {} / ID = #IDname {}
+
+Q) How would you apply a single rule to two different selectors?
+A)  .selector1,
+    .selector2 { }
+
+Q) Given an element that has an id of title and a class of primary, how would you use both attributes for a single rule?
+A)  #title.rule { }
+
+Q) What does the descendant combinator do?
+A) Combines parent and child as selector; 
+Ex; Div p { } Will only be actioned on paragraphs inside a div. 
+
+Q) Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
+ID > Class > selector
+
+
+
+
+
+
+
