@@ -203,8 +203,48 @@ A) Space inside of a Border? Use Padding!
 Q) Would you use margin or padding if you wanted two elements to overlap each other?
 A) Still outside of a border, Use Margin! Use negative Margin!
 
+Lesson 4 - Block and inline
+*Normal Flow* = webpage elements lay themselves out in a default manner
+(if you haven't messed with them)
+
+Block elements begin on a new line
+display: block;
+Ex: <h1> </h1>
+
+Inline elements do not. 
+display: inline-block;
+Ex; <a> </a>
+
+Additional Learning; Shorthand for Padding / Margin! 
+** Below is true for margin
+if padding has four values; it is top, right, bottom, left 
+padding: 2px, 10px, 20px, 15px;
+
+if padding has three values; it is top, left+right, bottom.
+padding: 10px, 15px, 20px;
+
+if padding has 2 values it is top+bottom, left+right.
+padding: 10px, 50px;
+
+if padding has 1 value; it is all sides. 
+padding: 50px;
 
 
+Q) What is the difference between a block element and an inline element?
+A) Block element is a Box that starts on a new line / Inline element is happy to stay in line.
 
+Q) What is the difference between an inline element and an inline-block element?
+A)  display:inline;         disregards padding and margin. Squish city.
+    display:inline-block;   respects padding and margin. 
 
+Q) Is an h1 block or inline?
+A) h1 is a Block element. 
 
+Q) Is span block or inline?
+A) span is an inline element.
+
+Q) Is button block or inline?
+A) button is an inline element
+
+Q) Is div block or inline?
+A) div is a block element. 
