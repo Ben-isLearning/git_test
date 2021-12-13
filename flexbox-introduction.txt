@@ -1,0 +1,96 @@
+Following Along with https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/introduction-to-flexbox#introduction 
+Flexbox 101 - 
+Lesson 1 - introduction
+
+Flexbox is a framework that arranges items into rows or columns. 
+These items will flex (grow/shrink) based on rules that are defined. 
+
+How to set up a flex container;
+.container { 
+display: flex; << Essential | Display type = Flex
+}
+
+How to set up a flex item
+.item {
+flex: 1;      << Essential | Flex = Enabled (Truthy value = Enabled)
+}
+
+Elements can be Flex containers AND flex items together. 
+Ex; a box containing 3 boxes. (With an even split).
+and each of those boxes contain 2 boxes. (With an 80/20 split).
+
+
+Q) What’s the difference between a flex container and a flex item?
+A)  Flex container allows the elements within to grow/shrink|flex 
+    Flex item grow/shrink|flexes to fit the container 
+
+Q) How do you create a flex item?
+A) flex: 1; (Truthy value for enabled)
+
+
+Lesson 2 - Growing and Shrinking
+
+flex: 1;
+is shorthand for
+
+flex:   1   1   0%;
+flex-grow: (1st)
+flex-shrink: (2nd)
+flex-basis: (3rd)
+
+Most common; 
+flex:1;         - Flex enabled
+flex-shrink:0;  - Flex-Shrink - Disabled 
+
+flex-grow:      an items growth factor flex:2; will grow twice the size of flex:1;
+
+flex-shrink:    if space avalible < hardcoded space - flex-shrink enables the flex items to shrink to fit
+                flex-shrink:1; = Items will shrink evenly
+                flex-shrink:2; = (or more) Items will shrink more than others
+                flex-shrink:0; = Items won't shrink evenly. 
+
+Warning: Flex grow/shrink items don't respect hardcoded values. 
+
+flex-basis:     sets the initial size of a flex item. and flex begins from the baseline size.
+                shorthand defaults is flex-basis:0%;
+                Can enable flex-basis:auto;
+                >flex-basis tells item to check width declaration
+
+Q) What are the 3 values defined in the shorthand flex property (e.g. flex: 1 1 auto)?
+A) flex-grow, flex-shrink and flex-basis
+
+
+Lesson 03 - Axes
+Flexboxes can Flex in the row(X)-axis (Default Left>Right), 
+as well as the column(Y)-axis (Default Top>Bottom)..
+
+Flexboxes default to row(X)-axis. can be set to column(Y)-axis.
+Wiiiith; 
+
+flex-direction: column;
+
+If direction= column, flex:1; does not work as intended. 
+(B/c it sets basis:0%)
+
+if direction= column, use flex: 1 1 auto;
+
+if direction=column, flex-basis refers to height, not width. 
+
+Back on topic; Default direction = Row  
+
+Q) How do you make flex items arrange themselves vertically instead of horizontally?
+A) flex-direction: column;
+
+Q) In a column flex-container, what does flex-basis refer to?
+A) flex-basis refers to height, rather than width.
+
+Q) In a row flex-container, what does flex-basis refer to?
+A) flex-basis by default, refers to width.
+
+Q) Why do the previous two questions have different answers?
+A)  Flex-basis looks to see if there is a given value to begin grow/shrinking from.
+    When flexing by Row (Xaxis), height is irrelivant.
+    When flexing by Columnm (Yaxis), width is irrelivant. 
+
+
+
