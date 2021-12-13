@@ -131,6 +131,77 @@ Ex; Div p { } Will only be actioned on paragraphs inside a div.
 Q) Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
 ID > Class > selector
 
+Lesson 02; Inspecting your code! 
+
+Use Chrome Dev tools to inspect / test out code 
+
+Q) How do you select a specific element on your page with your browser’s developer tools?
+A)  Right-Click, Inspect 
+    Then select the mouse icon
+    Then hover over/select whatever you like 
+
+Q) What does a strikethrough in a CSS element mean in your browser’s developer tools?
+A) The element has been overwritten by something else 
+
+Q) How do you change CSS in real time on specific elements of a web page with your browser’s developer tools?
+A)  Play with it inside the inspector. 
+    You can make changes to the code on the webpage 
+    Without effecting the source code.  
+
+Lesson 03; The Box Model 
+
+Every little thing, is just a little box. 
+Everything on a website is a box. - Errytin'
+
+Spacing for the Box model; Padding, Border, Margin
+
+Content:    The element <p>I like cheese</p>
+Padding:    Distance from Content to Border
+Border:     Layer between padding/Margin
+Margin:     Distance between border and other elements  
+            (Margin collapses between elements 60px + 60px = still 60px)
+
+Standard Box Model / Size of element = 
+border (20px)  +
+padding (20px) +
+height / width (100px * 100px) +
+padding (20px)+
+border (20px) +
+
+Ends up as 180px 
+
+Alternative Box Model / Size of element 
+Overwritten by; 'box-sizing: border-box;'
+
+This shrinks the entire element to 100px
+
+Box-Model Properties 
+
+box-sizing
+display
+float
+line-height
+position
+z-index 
+
+Q) From inside to outside, what is the order of box-model properties?
+A) Content, Wrapped in Padding, Wrapped in Border, Wrapped in Margin 
+
+Q) What does the box-sizing CSS property do?
+A) Allows the box-model to be set to an alternative size
+
+Q) What is the difference between the standard and alternative box model?
+A)  Standard adds padding(x2) and border(x2) to the size of the element
+    Whereas the alternative includes them by taking space away from the content. 
+
+Q) Would you use margin or padding to create more space between 2 elements?
+A) Space outside of a Border? Use Margin!
+
+Q) Would you use margin or padding to create more space between the contents of an element and its border?
+A) Space inside of a Border? Use Padding!
+
+Q) Would you use margin or padding if you wanted two elements to overlap each other?
+A) Still outside of a border, Use Margin! Use negative Margin!
 
 
 
